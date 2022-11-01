@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .header{
+            border: 1px dashed red;
+            text-align: center;
+        }
+        #headings{
+            color: blue;
+        }
+        #headings h1, h3, h6{
+            color: brown;
+        }
+        p{
+            font-weight: 500;
+        }
+        .base a{
+            color: black;
+            text-decoration: none;
+        }
+        .base a:active{
+            color: blue;
+            font-size: 20px;
+        }
+        #address h2{
+            font-style: oblique;
+        }
+        #address address{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+        }
+        .artical article{
+            border: 2px solid black;
+            margin: 15px;
+        }
+        #main p{
+            padding-left: 12px;
+        }
+        #main h3{
+            color: black;
+            font-size: 22px;
+        }
+        #main h1{
+            text-align: center;
+        }
+        #navbar a{
+            color: black;
+            text-decoration: none;
+            padding-left: 50px;
+        }
+        #navbar a:hover{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        #discrip li{
+            list-style-type: armenian;
+        }
+        #figure img{
+            width: 100px;
+            transition: width 2s transform 2s;
+            transition-delay: 2s;
+        }
+        #figure img:hover{
+            width: 200px;
+            transform: rotate(180deg);
+        }
+
+        #detail summary:hover{
+            font-size: 22px;
+        }
+    </style>
+
+    <base href="https://www.google.com" target="_blank">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>ASSIGNMENT#2</h1>
+        </div>
+        <br><hr>
+        <div id="headings">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <hr>
+        </div>
+    </header>
+
+    <section>
+        <div class="base">
+            <!-- BASE TAG -->
+            <h2>Base tag</h2>
+            <a href="">Click here</a>
+            <hr>
+        </div>
+
+        <div id="address">
+            <!-- ADDRESS TAG -->
+            <h2>Address Tag</h2>
+            <address>
+                Name: Sahar Sajjad <br>
+                E-mail: sahsaj31@gmail.com <br>
+                Contact Number: 0300-xxxxxxx <br>
+                Address: Faisalabad <br>
+            </address>
+            <hr>
+        </div>
+
+        <div class="artical">
+            <!-- ARTICAL TAG -->
+            <h2>article tag</h2>
+            <article>
+                <h1>HTML</h1>
+                <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+
+            </article>
+            <hr>
+        </div>
+
+        <div>
+
+        <div id="main">
+            <!-- MAIN TAG -->
+            <h2>main tag</h2> <br>
+            <main>
+                <h1>Languages for Web Development</h1>
+                <br>
+                <article>
+                    <h3>HTML</h3>
+                    <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                    <br>
+                    <h3>CSS</h3>
+                    <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                    <br>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</p>
+                </article>
+                <hr>
+            </main>
+        </div>
+
+        <div id="navbar">
+            <!-- NAV TAG -->
+            <h2>nav tag</h2>
+            <br>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <hr>
+        </div>
+
+        <div>
+            <!-- BLOCKQUOTE TAG -->
+            <h2>blockquote tag</h2>
+            <br>
+            <h1>According ti wikipedia</h1>
+            <blockquote>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions.</blockquote>
+            <hr>
+        </div>
+
+        <div id="discrip">
+            <!-- DESCRIPTION TAGS -->
+            <h2>description tag</h2>
+            <dl>
+                <ul>
+                    <li>
+                        <dt>Coffee1</dt>
+                        <dd>Black hot drink</dd>
+                    </li>
+                    <li>
+                        <dt>Coffee2</dt>
+                        <dd>Black hot drink</dd>
+                    </li>
+                    <li>
+                        <dt>Coffee3</dt>
+                        <dd>Black hot drink</dd>
+                    </li>
+                </ul>
+            </dl>
+            <hr>
+        </div>
+
+        <div id="figure">
+            <!--  FIGURE & FIGCAPTION TAG -->
+            <h2>figure & figcaption tag</h2>
+            <figure>
+                <img src="images/rock.jpg" alt="rock">
+                <figcaption>Fig 1: Rocks, Norway</figcaption>
+            </figure>
+        </div>
+        <hr>
+
+        <div>
+            <!-- ORDERED LIST -->
+            <h2>Ordered list</h2>
+            <ol>
+                <li>Order List 1</li>
+                <li>Order List 2</li>
+                <li>Order List 3</li>
+                <li>Order List 4</li>
+            </ol>
+            <hr>
+        </div>
+
+        <div>
+            <!-- UNORDERED LIST -->
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Unordered list 1</li>
+                <li>Unordered list 2</li>
+                <li>Unordered list 3</li>
+                <li>Unordered list 4</li>
+            </ul>
+            <hr>
+        </div>
+
+        <div>
+            <!-- PARAGRAPH TAG -->
+            <h2>Paragraph tag</h2>
+            <p>This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. This is a paragraph tag. </p>
+            <hr>
+        </div>
+
+        <div>
+            <!-- PRE TAG -->
+            <h2>pre tag</h2>
+            <pre>This is the           pre tag.
+It will show the text the      same as written in html    
+                                             with all space
+            </pre>
+            <hr>
+        </div>
+
+        <div>
+            <!-- ANCHOR TAG -->
+            <h2>anchor tag</h2>
+            <a href="https://ntu.edu.pk" target="_blank">NTU</a><br><br>
+            <a href="#" target="_blank">ABC</a>
+            <hr>
+
+            <!-- ABBREVIATION TAG -->
+            <h2>abbreviation tag</h2>
+            <abbr title="National Textile Univerity">NTU</abbr><br><br>
+            <abbr title="World Health Organization">WHO</abbr>
+            <hr>
+
+            <!-- BOLD TAG -->
+            <h2>bold tag</h2>
+            <b>This is a bolded line.</b>
+            <hr>
+
+            <!-- BDI TAG -->
+            <h2>bdi tag</h2>
+            <ul>
+                <li>User <bdi>1</bdi>: 60 points</li>
+                <li>User <bdi>2</bdi>: 80 points</li>
+                <li>User <bdi>إيان</bdi>: 90 points</li>
+               </ul>
+            <hr>
+
+            <!-- bdoTAG -->
+            <h2>bdo tag</h2>
+            <bdo dir="rtl">
+                This text will written from left to right.
+            </bdo>
+            <hr>
+
+            <!-- CITE TAG -->
+            <h2>cite tag</h2>
+            <p>The way to get started is to quit talking and begin doing.</p>
+            <cite>-Walt Disney</cite>
+            <hr>
+
+            <!-- CODE TAG -->
+            <h2>code tag</h2>
+            <pre><code>for(int i=0; i=5; i++)
+{
+    cout: This is the code tag.
+}</code>
+            </pre>
+            <hr>
+
+            <!-- DATA TAG -->
+            <h2>Data tag</h2>
+            <ul>
+                <li><data value="72637">ABC</data></li>
+                <li><data value="72638">XYZ</data></li>
+            </ul>
+            <hr>
+
+            <!-- DFN TAG -->
+            <h2>dfn tag</h2>
+            <p><dfn>HTML</dfn> stands for Hyper Text Markup Language.</p>
+            <hr>
+
+            <!-- EM TAG -->
+            <h2>em tag</h2>
+            <p>This is an <em>emphasized</em> word.</p>
+
+            <!-- ITALIC TAG -->
+            <hr>
+            <h2>i tag</h2>
+            <p><i>This is an italic line.</i></p>
+            <hr>
+            
+            <!-- KDB TAG -->
+            <h2>kdb tag</h2>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>V</kbd> to paste text.</p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>X</kbd> to cut text.</p>
+            <hr>
+
+            <!-- MARK TAG -->
+            <h2>mark tag</h2>
+            <p><mark>HTML</mark> stands for Hyper Text Markup Language.</p>
+            <hr>
+
+            <!-- Q TAG -->
+            <h2>q tag</h2>
+            <p><q>The way to get started is to quit talking and begin doing.</q></p>
+            <hr>
+
+            <!-- RUBY, RP AND RT TAG -->
+            <h2>ruby, rp and rt tag</h2>
+            <ruby>
+                漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+            </ruby>
+            <hr>
+
+            <!-- STRIKE-TAG -->
+            <h2>strike tag</h2>
+            <p>HTML stands for <s>Hypter Text Markup Language.</s></p>
+            <hr>
+
+            <!-- SAMP TAG -->
+            <h2>samp tag</h2>
+            <samp>Error 404! <br> File not found.</samp>
+            <hr>
+
+            <!-- SMALL TAG -->
+            <h2>small tag</h2>
+            <p>HTML stands for <small>Hypter Text Markup Language.</small></p>
+            <hr>
+
+            <!-- SPAN TAG -->
+            <h2>span tag</h2>
+            <p>The HyperText Markup Language or HTML is the <span class="green">standard markup language</span> for documents designed to be displayed in a web browser.</p>
+            <hr>
+
+            <!-- STRONG TAG -->
+            <h2>strong tag</h2>
+            <p><strong>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</strong></p>
+            <hr>
+
+            <!-- SUB TAG -->
+            <h2>sub tag</h2>
+            <p>This is a <sub>subscript</sub> tag.</p>
+            <hr>
+
+            <!-- SUP TAG -->
+            <h2>sup tag</h2>
+            <p>This is a <sup>superscript</sup> tag.</p>
+            <hr>
+
+            <!-- TIME TAG -->
+            <h2>time tag</h2>
+            <p>Wear green and white on <time datetime="2022-08-14 20:00">Independence day</time></p>
+            <hr>
+
+            <!-- U TAG -->
+            <h2>Underline tag</h2>
+            <p><u>This is an underlined paragraph. This is an underlined paragraph. This is an underlined paragraph. This is an underlined paragraph. This is an underlined paragraph. This is an underlined paragraph. This is an underlined paragraph. This is an underlined paragraph. This is an underlined paragraph. </u></p>
+            <hr>
+
+            <!-- VAR TAG -->
+            <h2>var tag</h2>
+            <p><var>x</var> = 2 <br> <var>y</var> = 4 <br> <var>z</var> = 7</p>
+            <hr>
+
+            <!-- WBR TAG -->
+            <h2>wbr tag</h2>
+            <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style <wbr>Sheets and scripting languages such as JavaScript.</p>
+            <hr>
+        </div>
+
+        <div>
+            <!-- AREA & MAP TAG -->
+            <h2>area tag</h2>
+            <img src="imgs/faisalmosque.jpg" alt="faisalmosque" usemap="#workmap" width="400" height="379">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://ntu.edu.pk">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="">
+            </map>
+            <hr>
+
+            <!-- AUDIO TAG -->
+            <h2>AudioTag</h2>
+            <audio src="#" controls></audio>
+            <hr>
+
+            <!-- IMAGE TAG -->
+            <h2>image tag</h2>
+            <img src="imgs/faisalmosque.jpg" alt="faisalmosque">
+            <hr>
+
+            <!-- VIDEO TAG -->
+            <h2>Video tag</h2>
+            <video src="#" controls></video>
+            <hr>
+        </div>
+
+        <div id="svg">
+            <!-- SVG TAG -->
+            <h2>Svg tag:</h2>
+            <svg >
+                <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="2px" fill="green"></circle>
+            </svg>
+            <hr>
+        </div>
+
+        <div>
+            <!-- DEL AND INS TAG -->
+            <h2>Del and ins tag</h2>
+            <p>My fav color is <del>pink</del> <ins>yellow</ins>.</p>
+            <hr>
+        </div>
+
+        <div>
+            <!-- TABLE TAGS -->
+            <h2>Table tags</h2>
+            <br>
+            <caption>Student Record</caption><br>
+            <table border="2px">
+                <colgroup>
+                    <col span="2" style="background-color: yellow;">
+                    <col span="1" style="background-color: red;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Faiqa</td>
+                        <td>1149</td>
+                        <td>IT</td>
+                    </tr>
+                    <tr>
+                        <td>abc</td>
+                        <td>2</td>
+                        <td>SE</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>xyz</td>
+                        <td>3</td>
+                        <td>CS</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+        </div>
+
+        <div>
+            <!-- FORMS -->
+            <h2>Forms tags</h2>
+            <form action=" " method="get">
+                <!-- DATALIST -->
+                <input list="browser">
+                <datalist>
+                    <option value="chrome">Chorme</option>
+                    <option value="firefox">FireFox</option>
+                    <option value="edge">Microsoft Edge</option>
+                </datalist><br><br>
+                <!-- FIELDSET AND LEGEND -->
+                <fieldset>
+                    <legend>Personal Information:</legend>
+                        <label for="fname">First name:</label>
+                        <input type="text"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date"><br><br>
+                   </fieldset><br><br>
+                   <!-- INPUT AND LABLE -->
+                   <label for="Fname">First Name:</label><br>
+                   <input type="text"><br><br>
+                   <label for="lname">Last Name:</label><br>
+                   <input type="text"><br><br>
+                   <label for="email">Email:</label><br>
+                   <input type="email"><br><br>
+                   <label for="browser">Chose a browser:</label><br>
+                <!-- METER -->
+                <label for="progress">Progress bar in meters:</label>
+                <meter value="bar">60%</meter><br><br>
+                <!-- OPTGROUP -->
+                <select>
+                    <optgroup label="Cars">
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="mercede">Mercede</option>
+                    </optgroup>
+                    <optgroup label="Colors">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="black">Black</option>
+                        <option value="yellow">Yellow</option>
+                    </optgroup>
+                </select><br><br>
+                <!-- OUTPUT -->
+                <input type="number" id="a" value="25">
+                + <input type="number" id="b" value="25">
+                = <output name="x" for="a b"></output><br><br>
+                <!-- PROGRESS -->
+                <legend>Progress bar:</legend>
+                    <progress value="65" max="100"></progress><br><br>
+                <!-- SELECT AND OPTION -->
+                <legend>Chose a color:</legend>
+                <select>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                    <option value="yellow">Yellow</option>
+                </select><br><br>
+                <!-- TEXTAREA -->
+                <textarea name="Description" cols="50" rows="10" width="100%" ></textarea><br><br>
+                <hr>
+                <!-- BUTTON -->
+                <button>Submit</button><br><br>
+            </form>
+            <hr>
+        </div>
+
+        <div id="detail">
+            <!-- DETAIL AND SUMMARY TAG -->
+            <h2>Deatil and Summary tags</h2>
+            <details>
+                <summary>HTML</summary>
+                <p>HTML stands for Hypter Text Markup Language.</p>
+            </details>
+            <hr>
+
+        <div>
+            <!-- BIG TAG -->
+            <h2>big tag</h2>
+            <p>HTML stands for <big>Hyper Text Markup Language.</big></p>
+            <hr>
+
+            <!-- CENTER TAG -->
+            <h2>center tag</h2>
+            <center><p>HTML stands for Hyper Text Markup Language.</p></center>
+            <hr>
+
+            <!-- IFRAME & FRAMESET TAG -->
+            <h2>iframe tag</h2>
+            <frameset><iframe src="https://www.ntu.edu.pk" frameborder="10">NTU</iframe></frameset>
+            <hr>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
